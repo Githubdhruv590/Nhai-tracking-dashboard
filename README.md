@@ -200,10 +200,7 @@ Your folder should be
 
 ```
 Nhai-survey-dashboard/
-│
-├── backend/
-├── frontend/
-└── README.md
+
 ```
 
 ---
@@ -213,7 +210,7 @@ Nhai-survey-dashboard/
 Start the FastAPI server.
 
 ```bash
-uvicorn backend.main:app --reload
+python main.py
 ```
 
 Server starts on
@@ -244,10 +241,6 @@ http://127.0.0.1:8000/redoc
 
 Activate virtual environment.
 
-```bash
-cd backend
-```
-
 ```powershell
 .\venv\Scripts\Activate.ps1
 ```
@@ -261,7 +254,7 @@ cd ..
 Run server.
 
 ```bash
-uvicorn backend.main:app --reload
+python main.py
 ```
 
 ---
