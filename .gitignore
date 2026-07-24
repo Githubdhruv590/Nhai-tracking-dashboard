@@ -1,0 +1,12 @@
+# Secrets
+service_account.json
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
