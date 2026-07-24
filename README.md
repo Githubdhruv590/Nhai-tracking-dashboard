@@ -4,30 +4,34 @@ A FastAPI-based backend application for the **NHAI Survey Dashboard**. This appl
 
 ---
 
-# Project Structure
+## 📁 Project Structure
 
 ```text
-Nhai-survey-dashboard/
+Nhai-tracking-dashboard/
 │
-├── backend/
-│   ├── config/
-│   ├── logs/
-│   ├── models/
-│   ├── routers/
-│   ├── services/
-│   ├── tests/
-│   ├── utils/
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── .env
-│   ├── credentials.json      # Google Service Account (Not committed)
-│   └── __init__.py
+├── venv/                         # Python virtual environment (local)
+├── .env                          # Environment variables
+├── .env.example                  # Sample environment configuration
+├── .gitignore                    # Git ignore rules
+├── README.md                     # Project documentation
+├── requirements.txt              # Python dependencies
 │
-├── frontend/
+├── credentials.json              # Google Service Account credentials (do not commit)
 │
-├── .gitignore
-└── README.md
+├── main.py                       # Application entry point
+├── dashboard.py                  # Dashboard UI and application workflow
+├── calculator.py                 # Road length calculation logic
+├── config.py                     # Configuration and environment loading
+├── drive_reader.py               # Google Drive integration
+├── google_sheet_reader.py        # Google Sheets integration
+├── excel_parser.py               # Excel file parsing utilities
+├── utils.py                      # Common utility functions
+├── diagnose.py                   # Diagnostic utilities
+├── verify_drive_access.py        # Verify Google Drive access
+│
+└── logs/                         # Generated log files (if applicable)
 ```
+
 
 ---
 
